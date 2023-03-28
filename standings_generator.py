@@ -64,10 +64,13 @@ def main() -> None:
 
     season_list = spain_df['Season'].unique()
     all_season_standings_list = []
+    # loops for each season in data
     for season in season_list:
+        logging.info(f'Calculating team records for {season} season')
         season_records = spain_df[spain_df['Season'] == season]
         team_list = season_records['home'].unique()
         empty_list = []
+        # loops for each team in season
         for team in team_list:
             # gets team records
             team_home_record = season_records[season_records['home'] == team]
@@ -115,6 +118,7 @@ def main() -> None:
         season_standings_df = pd.DataFrame(empty_list)
         season_standings_df = season_standings_df.sort_values(by= 'Points', ascending= False).reset_index(drop=True)
         all_season_standings_list.append(season_standings_df)
+        logging.info(f'Standings calculated. Adding {season} records to dataframe]')
     all_season_standings_df = pd.concat(all_season_standings_list)
  
     logging.info('Saving output file.')
