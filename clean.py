@@ -71,9 +71,7 @@ def main() -> None:
 
     # 3. TODO: Update column names
     logging.info('Step 3: Improving column readability.')
-    spain_df.rename(columns={
-            'FT': 'score'
-        }, inplace=True)
+    spain_df.rename(columns={'FT': 'score'}, inplace=True)
 
 
     # 4. TODO: Adding hpoints and vpoints columns
