@@ -117,6 +117,8 @@ def main() -> None:
         
         season_standings_df = pd.DataFrame(empty_list)
         season_standings_df = season_standings_df.sort_values(by= 'Points', ascending= False).reset_index(drop=True)
+        season_standings_df['Place'] = season_standings_df.index + 1
+        season_standings_df = season_standings_df.iloc[:,[0,1,2,9,3,4,5,6,7,8]]
         all_season_standings_list.append(season_standings_df)
         logging.info(f'Standings calculated. Adding {season} records to dataframe]')
     all_season_standings_df = pd.concat(all_season_standings_list)
