@@ -2,9 +2,12 @@
 
 A data analysis project for Code Louisville Data Analysis Course 1.
 
-This project uses spanish soccer league data from 1929-2022 to examine the head-to-head records between the leagues biggest two clubs: Real Madrid and FC Barcelona.
+This project uses spanish [soccer league data](https://github.com/jalapic/engsoccerdata) from 1929-2022 to examine the head-to-head records between the leagues biggest two clubs: Real Madrid and FC Barcelona.
 
 All packages to run the project are located in the *requirements.txt* file. Pandas and Matplotlib are the primary libraries used.
+
+Data Source: https://github.com/jalapic/engsoccerdata
+
 
 **Setup Instructions**
 
@@ -59,6 +62,12 @@ This data file contains the season totals for each team including: points, wins,
             `season_standings_df = pd.DataFrame(empty_list)`
 
     4. Make 2 basic plots with matplotlib.
+        
+        - Bar plots in explore.ipynb compare overall records for the two teams
+        - Head-to-head records also plotted.
 
 
     5. Write markdown cells in Jupyter explaining your thought process and code.
+        
+        - See markdown cells in explore.ipynb for explainations.
+        
