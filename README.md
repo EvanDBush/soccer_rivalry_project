@@ -24,6 +24,8 @@ The next step is to run the *standings_generator.py* script to calculate the res
 
 This data file contains the season totals for each team including: points, wins, losses, ties, goals scored, goals conceeded and goal differential.
 
+Analysis of the data is located in the notebook files explore.ipynb and head_to_head.ipynb. explore focuses on the season results data for all teams. Head_to_head.ipynb examines the top two teams from the league, Barcelona and Real Madrid, and their games against eachother.
+
 ### 5 features included:
     
     1. Read in data from a local csv.
@@ -64,7 +66,8 @@ This data file contains the season totals for each team including: points, wins,
     4. Make 2 basic plots with matplotlib.
         
         - Bar plots in explore.ipynb compare overall records for the two teams
-        - Head-to-head records also plotted.
+        - Pie charts in head_to_head.ipynb comapare wins, losses, and ties between the two teams.
+        - Head-to-head records also plotted in head_to_head.ipynb notebook.
 
 
     5. Write markdown cells in Jupyter explaining your thought process and code.
